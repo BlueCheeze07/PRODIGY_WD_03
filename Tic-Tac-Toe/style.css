@@ -1,0 +1,62 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+}
+
+.board {
+    display: grid;
+    grid-template-columns: repeat(3, 120px); /* Increase width to 120px */
+    grid-gap: 10px; /* Increase gap to 10px */
+    margin: 20px;
+}
+
+.cell {
+    width: 120px; /* Increase width to 120px */
+    height: 120px; /* Increase height to 120px */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 28px; /* Increase font size to 28px */
+    background-color: #eee;
+    cursor: pointer;
+}
+
+.cell.x {
+    background-color: #ffcccc;
+}
+
+.cell.o {
+    background-color: #cceeff;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 24px; /* Increase font size to 24px */
+    font-weight: bold;
+    color: green;
+}
+
+button {
+    font-family: "Times New Roman", Times, serif; /* Change font to Times New Roman */
+    font-size: 20px; /* Increase font size */
+    padding: 10px 20px; /* Increase padding to make button bigger */
+}
+
+/* Add style for winning cells */
+.cell.winning {
+    background-color: #ffffcc; /* Light yellow color for winning cells */
+}
+/* Style for the title */
+#title {
+    font-size: 60px; /* Size 56 */
+    font-family: "Comic Sans MS", cursive, sans-serif; /* Comic Sans font */
+    margin-top: -10px; /* Move the title upward */
+}
+
